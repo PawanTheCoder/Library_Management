@@ -1,0 +1,105 @@
+/* ClassNames : 
+1.conatiner
+2.rightpanel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    align-content: center;
+    height: 100vh;
+
+    text-align: center;
+    display: flex;
+}
+
+
+input {
+    height: 30px;
+    width: 70%;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1rem;
+    align-self: left;
+}
+
+
+
+.leftpanel {
+    width: 50%;
+    color: white;
+    background-color: black;
+    align-content: center;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+
+.rightpanel {
+    width: 50%;
+    align-content: center;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.con {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.ButtonB {
+    color: yellow;
+    font-style: none;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.ButtonB:hover,
+.ButtonW:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+.ButtonW {
+    color: black;
+    font-style: none;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+
+}
