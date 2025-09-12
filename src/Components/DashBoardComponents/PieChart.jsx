@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./PieChart.module.css";
 
 const PieChart = ({ borrowed, returned }) => {
-    borrowed = 0;
-    returned = 0;
+    borrowed = 5;
+    returned = 10;
     const total = borrowed + returned;
     const borrowedPercent = total > 0 ? (borrowed / total) * 100 : 0;
     const returnedPercent = 100 - borrowedPercent;
