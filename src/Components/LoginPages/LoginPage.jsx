@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import styles from "./LoginPage.module.css";
-import Logo from "../assets/image.png";
+import Logo from "../../assets/image.png";
 
 function LoginPage() {
+
+
     return (
         <div className={styles.container}>
             <div className={styles.leftpanel}>
@@ -11,7 +13,9 @@ function LoginPage() {
                 <p>Please enter your credentials to log in</p>
                 <input type="text" placeholder="Username..." />
                 <input type="text" placeholder="Password..." />
-                <h2>Forgot password?</h2>
+                <Link to="/resetPass">
+                    <h2>Forgot password?</h2>
+                </Link>
                 <Link to="/hero" className={styles.ButtonB}>
                     Sign in
                 </Link>

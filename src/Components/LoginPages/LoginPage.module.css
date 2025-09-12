@@ -10,9 +10,17 @@
 .container {
     align-content: center;
     height: 100vh;
-
     text-align: center;
     display: flex;
+}
+
+input {
+    width: 70%;
+    max-width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 .leftpanel {
@@ -26,12 +34,7 @@
     width: 50%;
 }
 
-input {
-    height: 30px;
-    width: 70%;
-    border: 3px solid #333;
-    border-radius: 10px;
-}
+
 
 h2 {
     font-size: 1rem;
@@ -63,6 +66,7 @@ h2 {
     background-color: black;
     border-radius: 10px;
     width: 70%;
+    max-width: 300px;
 }
 
 .ButtonB:hover,
@@ -81,5 +85,5 @@ h2 {
     background-color: white;
     border-radius: 10px;
     width: 70%;
-
+    max-width: 300px;
 }

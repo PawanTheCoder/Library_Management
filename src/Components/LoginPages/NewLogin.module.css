@@ -47,7 +47,6 @@ h2 {
 }
 
 
-
 .rightpanel {
     width: 50%;
     align-content: center;
@@ -83,6 +82,7 @@ h2 {
     background-color: black;
     border-radius: 10px;
     width: 70%;
+    max-width: 300px;
 }
 
 .ButtonB:hover,
@@ -101,5 +101,5 @@ h2 {
     background-color: white;
     border-radius: 10px;
     width: 70%;
-
+    max-width: 300px;
 }

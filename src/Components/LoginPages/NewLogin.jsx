@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./NewLogin.module.css";
-import Logo from "../assets/image.png";
+import Logo from "../../assets/image.png";
 
 function NewLogin() {
     return (
