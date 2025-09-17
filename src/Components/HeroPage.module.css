@@ -26,6 +26,8 @@
     display: flex;
     gap: 15px;
     align-items: center;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .mainContent {
@@ -77,6 +79,8 @@
     justify-content: space-around;
     gap: 20px;
     margin-top: 20px;
+
+
 }
 
 .listCard {
@@ -86,6 +90,8 @@
     border-radius: 10px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .listCard h3 {
@@ -101,4 +107,73 @@
 .listCard li {
     padding: 6px 0;
     border-bottom: 1px solid #eee;
+}
+
+.Active {
+    color: black;
+    background-color: white;
+}
+
+.def {
+    color: white;
+    background-color: black;
+}
+
+.navItem:hover {
+    cursor: pointer;
+}
+
+.BookList {
+    display: grid;
+    grid-template-columns: 50px 1fr 200px;
+    /* serial | book | author */
+    gap: 10px;
+    max-height: 300px;
+    /* optional scroll */
+    overflow-y: auto;
+    padding: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.BookList div {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    /* row separation */
+}
+
+
+li {
+    list-style: none;
+}
+
+.contentBox {
+    flex: 1;
+    /* take available space */
+    max-height: calc(100vh - 100px);
+    /* leave room for header/footer if needed */
+    overflow-y: auto;
+    /* only this area scrolls */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    align-self: center;
+    max-width: 300px;
+    border-radius: 30px;
+    border: 2px solid grey;
+}
+
+.toStick {
+    position: fixed;
+}
+
+.nameList {
+    padding-top: 20px;
 }
