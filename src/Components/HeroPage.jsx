@@ -21,10 +21,12 @@ function HeroPage() {
     // Dummy Data
     const books = ["Book A", "Book B", "Book C", "Book D", "Book E"];
     const students = ["Student 1", "Student 2", "Student 3", "Student 4", "Student 5"];
+    let bookCount = BookData.length;
+    const [borrowed, setBorrowed] = useState(15);
+    const [returned, setReturned] = useState(10);
 
     return (
         <div className={styles.hero}>
-            {/* Sidebar */}
             <div className={styles.nav}>
                 <div className={styles.navHead}>
                     <img src={Logo} alt="Book icon" width="50" />
@@ -65,9 +67,9 @@ function HeroPage() {
                 </div>
             </div>
 
-            {/* Main Content */}
+
             <div className={styles.mainContent}>
-                {/* Header */}
+
                 <div className={styles.headerLine}>
                     <div className={styles.toFlexRow}>
                         <FaUserAlt className={styles.increaseFont} />
@@ -82,14 +84,24 @@ function HeroPage() {
                     </div>
                 </div>
 
-                {/* Main Dynamic Section */}
+
                 {currentNav === "Dashboard" && (
                     <>
-                        {/* Pie Chart Centered */}
+
                         <div className={styles.pieChartWrapper}>
-                            <PieChart borrowed={30} returned={70} />
+                            <PieChart borrowed={borrowed} returned={returned} />
+                            <div className={styles.cardContainer}>
+                                <div className={styles.cardContainer1}>
+                                    <p>Total Books : {bookCount}</p>
+                                    <p>Total Users : {StudentData.length}</p>
+                                </div>
+                                <div className={styles.cardContainer2}>
+                                    <p>Total Borrowed : {borrowed}</p>
+                                    <p>Total Returned : {returned}</p>
+                                </div>
+                            </div>
                         </div>
-                        {/* Lists Section */}
+
                         <div className={styles.listsSection}>
                             <div className={styles.listCard}>
                                 <h3 >Books</h3>

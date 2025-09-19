@@ -65,15 +65,14 @@
     font-size: 1.6rem;
 }
 
-/* Center PieChart */
 .pieChartWrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 30px 0;
+    flex-wrap: wrap;
 }
 
-/* Lists Section */
 .listsSection {
     display: flex;
     justify-content: space-around;
@@ -126,10 +125,8 @@
 .BookList {
     display: grid;
     grid-template-columns: 50px 1fr 200px;
-    /* serial | book | author */
     gap: 10px;
     max-height: 300px;
-    /* optional scroll */
     overflow-y: auto;
     padding: 10px;
     overflow-y: auto;
@@ -139,7 +136,6 @@
 .BookList div {
     padding: 5px;
     border-bottom: 1px solid #ccc;
-    /* row separation */
 }
 
 
@@ -149,15 +145,11 @@ li {
 
 .contentBox {
     flex: 1;
-    /* take available space */
     max-height: calc(100vh - 100px);
-    /* leave room for header/footer if needed */
     overflow-y: auto;
-    /* only this area scrolls */
     padding: 20px;
     box-sizing: border-box;
 }
-
 
 .BookHeading {
     font-size: 2rem;
@@ -176,4 +168,20 @@ li {
 
 .nameList {
     padding-top: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardContainer p {
+    background-color: rgba(0, 128, 255, 0.3);
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid green;
+    border-radius: 20px;
+    font-size: 1.5rem;
+
 }

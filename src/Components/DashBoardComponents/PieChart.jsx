@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./PieChart.module.css";
 
 const PieChart = ({ borrowed, returned }) => {
-    borrowed = 5;
-    returned = 10;
     const total = borrowed + returned;
     const borrowedPercent = total > 0 ? (borrowed / total) * 100 : 0;
     const returnedPercent = 100 - borrowedPercent;
@@ -13,8 +11,8 @@ const PieChart = ({ borrowed, returned }) => {
 
     // Build conic gradient
     const gradient = `conic-gradient(
-        #4caf50 0deg ${borrowedDeg}deg,
-        #2196f3 ${borrowedDeg}deg 360deg
+        #000 0deg ${borrowedDeg}deg,
+        #fff ${borrowedDeg}deg 360deg
     )`;
 
     return (
@@ -26,7 +24,7 @@ const PieChart = ({ borrowed, returned }) => {
                 aria-label={`Books borrowed: ${borrowed}, Books returned: ${returned}`}
             >
                 <div className={styles.pieCenter}>
-                    <span>{total} Books</span>
+                    <span></span>
                 </div>
             </div>
             <div className={styles.legend}>

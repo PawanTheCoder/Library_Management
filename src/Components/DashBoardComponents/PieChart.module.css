@@ -15,15 +15,17 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transition: background 0.6s ease;
     position: relative;
+    border: 5px solid yellow;
 }
 
 .pie::after {
-    content: "";
+    /* content: "";
     width: 60%;
     height: 60%;
     background: #fff;
     border-radius: 50%;
-    position: absolute;
+    position: absolute; */
+    display: none;
 }
 
 .pie-center {
@@ -54,9 +56,9 @@
 }
 
 .color.borrowed {
-    background-color: #4caf50;
+    background-color: #000;
 }
 
 .color.returned {
-    background-color: #2196f3;
+    background-color: white;
 }
