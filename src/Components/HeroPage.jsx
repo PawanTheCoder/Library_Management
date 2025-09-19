@@ -104,7 +104,7 @@ function HeroPage() {
 
                         <div className={styles.listsSection}>
                             <div className={styles.listCard}>
-                                <h3 >Books</h3>
+                                <h3 >OverDued Books</h3>
                                 <ul className={styles.nameList}>
                                     {BookData.map((book) => (
                                         <li key={book.id}>{book.title}</li>
@@ -112,7 +112,7 @@ function HeroPage() {
                                 </ul>
                             </div>
                             <div className={styles.listCard}>
-                                <h3 >Students</h3>
+                                <h3 >Borrowed Books</h3>
                                 <ul className={styles.nameList}>
                                     {StudentData.map((student) => (
                                         <li key={student.id}>{student.name}</li>
