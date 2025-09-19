@@ -117,7 +117,7 @@ function HeroPage() {
 
                 {currentNav === "Books" && (
                     <div className={styles.contentBox}>
-                        <center><h1>Books Page</h1></center>
+                        <center><h1 className={styles.BookHeading}>Books Page</h1></center>
                         <ul>
                             {BookData.map((book) => (
                                 <div className={styles.BookList}>
